@@ -1,5 +1,18 @@
 from django.views import generic
-from .models import Placeholder
+from web.serializers import *
+from django.contrib.auth.models import User
+from rest_framework import viewsets
+
+
+# ViewSets define the view behavior.
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
+
+
+class PlaceholderViewSet(viewsets.ModelViewSet):
+    queryset = Placeholder.objects.all()
+    serializer_class = PlaceholderSerializer
 
 
 class IndexView(generic.ListView):
