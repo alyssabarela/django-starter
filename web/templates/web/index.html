@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'web/style.css' %}">
+
+{% if index_list %}
+    <ul>
+    {% for index in latest_index_list %}
+    <li><a href="{% url 'web:detail' index.id %}">{{ index.index_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No placeholders are available.</p>
+{% endif %}

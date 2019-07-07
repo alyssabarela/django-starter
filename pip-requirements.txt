@@ -1,0 +1,9 @@
+coreapi==2.3.3
+django==2.2
+django-filter==2.1.0
+django-guardian==2.0.0
+djangorestframework==3.9.4
+djangorestframework-jsonapi==2.8.0
+markdown==3.1.1
+psycopg2==2.8.3
+pygments==2.4.2
