@@ -88,7 +88,10 @@ DATABASES = {
         'USER': 'axon',
         'PASSWORD': 'axon',
         'HOST': 'localhost',
-        'POST': ''
+        'POST': '',
+        'TEST': {
+            'NAME': 'test_axon',
+        }
     }
 }
 

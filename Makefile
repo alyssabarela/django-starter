@@ -17,3 +17,6 @@ db-clean:
 
 run: packages
 	. venv/bin/activate; python3 manage.py runserver
+
+test: packages
+	. venv/bin/activate; python3 manage.py test

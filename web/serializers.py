@@ -15,3 +15,6 @@ class PlaceholderSerializer(serializers.HyperlinkedModelSerializer):
         model = Placeholder
         fields = ('placeholder',)
 
+    def create(self, validated_data):
+        return Placeholder.objects.create(**validated_data)
+
