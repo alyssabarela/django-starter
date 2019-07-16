@@ -15,6 +15,16 @@ class PlaceholderViewSet(viewsets.ModelViewSet):
     serializer_class = PlaceholderSerializer
 
 
+class OfficerViewSet(viewsets.ModelViewSet):
+    queryset = Officer.objects.all()
+    serializer_class = OfficerSerializer
+
+
+class IncidentViewSet(viewsets.ModelViewSet):
+    queryset = Incident.objects.all()
+    serializer_class = IncidentSerializer
+
+
 class IndexView(generic.ListView):
     template_name = 'web/index.html'
     context_object_name = 'placeholder_list'

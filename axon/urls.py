@@ -9,6 +9,8 @@ from web.views import *
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'placeholders', PlaceholderViewSet)
+router.register(r'officers', OfficerViewSet)
+router.register(r'incidents', IncidentViewSet)
 
 # Wire up our API using automatic URL routing.
 # Additionally, we include login URLs for the browsable API.
