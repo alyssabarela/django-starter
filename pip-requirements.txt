@@ -6,5 +6,5 @@ djangorestframework==3.9.4
 djangorestframework-jsonapi==2.8.0
 markdown==3.1.1
 psycopg2==2.8.3
-pygments==2.4.2
+pygments==2.7.4
 requests==2.22.0
